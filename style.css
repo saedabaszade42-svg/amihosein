@@ -1,0 +1,219 @@
+Enter*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Vazirmatn',sans-serif;
+}
+
+body{
+background:#081321;
+color:#fff;
+line-height:1.8;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#0d1b2a;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 4px 15px rgba(0,0,0,.3);
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+width:70px;
+height:70px;
+border-radius:12px;
+object-fit:cover;
+}
+
+.logo h1{
+font-size:28px;
+color:#d4af37;
+}
+
+.logo p{
+font-size:14px;
+color:#ddd;
+}
+
+nav{
+display:flex;
+gap:20px;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+.hero{
+height:90vh;
+background:url("images/banner.jpg") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.overlay{
+background:rgba(0,0,0,.55);
+padding:40px;
+border-radius:20px;
+text-align:center;
+}
+
+.overlay h2{
+font-size:48px;
+color:#d4af37;
+margin-bottom:15px;
+}
+
+.overlay p{
+font-size:20px;
+margin-bottom:25px;
+}
+
+.btn{
+background:#d4af37;
+color:#000;
+padding:14px 28px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.about,
+.gallery,
+.contact{
+padding:70px 8%;
+}
+
+.about h2,
+.gallery h2,
+.contact h2{
+text-align:center;
+color:#d4af37;
+margin-bottom:25px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:#132238;
+border-radius:15px;
+overflow:hidden;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:260px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+text-align:center;
+}
+
+.box{
+max-width:700px;
+margin:auto;
+background:#132238;
+padding:30px;
+border-radius:15px;
+}
+
+.box p{
+margin:15px 0;
+}
+
+.box a{
+color:#d4af37;
+text-decoration:none;
+}
+
+.copy{
+display:flex;
+gap:10px;
+margin-top:8px;
+}
+
+.copy input{
+flex:1;
+padding:12px;
+border:none;
+border-radius:8px;
+background:#fff;
+color:#000;
+}
+
+.copy button{
+background:#d4af37;
+border:none;
+padding:12px 18px;
+cursor:pointer;
+border-radius:8px;
+font-weight:bold;
+}
+
+.copy button:hover{
+background:#e7c85a;
+}
+
+footer{
+background:#0d1b2a;
+text-align:center;
+padding:25px;
+margin-top:40px;
+color:#ccc;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.overlay h2{
+font-size:34px;
+}
+
+.overlay p{
+font-size:17px;
+}
+
+.logo img{
+width:60px;
+height:60px;
+}
+
+}
